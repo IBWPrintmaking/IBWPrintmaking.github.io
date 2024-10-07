@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+<h1>Welcome to IBW High School Printmaking</h1>
+<p>Explore our journey through the world of printmaking, from student projects to artistic discoveries.</p>
+<h2>Blog</h2>
+<ul class="post-list">
+  {% for post in site.posts limit:3 %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/blog.html' | relative_url }}">View all posts</a></p>
