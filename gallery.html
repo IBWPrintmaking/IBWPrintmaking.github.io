@@ -3,19 +3,21 @@ layout: default
 title: Gallery
 ---
 
-<h1>IBW High School Printmaking Class Gallery</h1>
+<div class="content-container">
+  <h1>IBW High School Printmaking Class Gallery</h1>
 
-<div class="gallery-grid">
-  {% for image in site.static_files %}
-    {% if image.path contains '/assets/images/' %}
-      <div class="gallery-item">
-        <img src="{{ site.baseurl }}{{ image.path }}" 
-             alt="{{ image.name }}" 
-             loading="lazy">
-        <h2>{{ image.name }}</h2>
-      </div>
-    {% endif %}
-  {% endfor %}
+  <div class="gallery-grid">
+    {% for image in site.static_files %}
+      {% if image.path contains '/assets/images/' %}
+        <div class="gallery-item">
+          <img src="{{ site.baseurl }}{{ image.path }}" 
+               alt="{{ image.name }}" 
+               loading="lazy">
+          <h2>{{ image.name }}</h2>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
 <div id="imageModal" class="modal">
@@ -52,11 +54,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </script>
 
 <style>
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 @media (max-width: 1200px) {
