@@ -2,14 +2,20 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content-container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 header, footer {
     background-color: #f0f0f0;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -18,6 +24,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -34,13 +41,13 @@ nav ul li a {
     font-style: italic;
 }
 
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
 }
+
 .gallery-item {
     background-color: white;
     border-radius: 8px;
@@ -48,13 +55,14 @@ nav ul li a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
+
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 4px;
     object-fit: cover;
-    aspect-ratio: 1 / 1;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -65,6 +73,7 @@ nav ul li a {
     height: 100%;
     background-color: rgba(0,0,0,0.9);
 }
+
 .modal-content {
     margin: auto;
     display: block;
@@ -73,6 +82,7 @@ nav ul li a {
     max-height: 80%;
     object-fit: contain;
 }
+
 .close {
     position: absolute;
     top: 15px;
@@ -82,6 +92,7 @@ nav ul li a {
     font-weight: bold;
     transition: 0.3s;
 }
+
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -89,13 +100,16 @@ nav ul li a {
     cursor: pointer;
 }
 
-.content-container {
-   
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
+@media (max-width: 768px) {
+    .content-container {
+        padding: 0 10px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+}

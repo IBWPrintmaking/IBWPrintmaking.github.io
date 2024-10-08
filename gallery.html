@@ -3,21 +3,17 @@ layout: default
 title: Gallery
 ---
 
-<div class="content-container">
-  <h1>IBW High School Printmaking Class Gallery</h1>
+<h1>IBW High School Printmaking Class Gallery</h1>
 
-  <div class="gallery-grid">
-    {% for image in site.static_files %}
-      {% if image.path contains '/assets/images/' %}
-        <div class="gallery-item">
-          <img src="{{ site.baseurl }}{{ image.path }}" 
-               alt="{{ image.name }}" 
-               loading="lazy">
-          <h2>{{ image.name }}</h2>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+<div class="gallery-grid">
+  {% for image in site.static_files %}
+    {% if image.path contains '/assets/images/' %}
+      <div class="gallery-item">
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
+        <h2>{{ image.name }}</h2>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div id="imageModal" class="modal">
