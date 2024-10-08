@@ -15,7 +15,13 @@ body {
 
 header, footer {
     background-color: #f0f0f0;
-    padding: 1rem 0;
+    width: 100%;
+}
+
+.header-content, .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
     text-align: center;
 }
 
@@ -101,8 +107,8 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-    .content-container {
-        padding: 0 10px;
+    .header-content, .footer-content, .content-container {
+        padding: 1rem 10px;
     }
     
     .gallery-grid {
