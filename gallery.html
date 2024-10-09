@@ -11,7 +11,7 @@ title: Gallery
       {% assign image_name = image.path | split: '/' | last %}
       <div class="gallery-item">
         <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
-        <h2>{{ image.name }}</h2>
+       
         {% if site.data.image_descriptions[image_name] %}
           <p class="image-description">{{ site.data.image_descriptions[image_name] }}</p>
         {% endif %}
