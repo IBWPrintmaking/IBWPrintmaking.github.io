@@ -107,6 +107,61 @@ nav ul li a {
     transition: 0.3s;
 }
 
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.store-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.store-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.store-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.design-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 0 10px;
+    flex-grow: 1;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
 .close:hover,
 .close:focus {
     color: #bbb;
