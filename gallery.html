@@ -8,10 +8,13 @@ title: Gallery
 <div class="gallery-grid">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/' %}
+      {% assign image_name = image.path | split: '/' | last %}
       <div class="gallery-item">
         <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
         <h2>{{ image.name }}</h2>
-        <p class="image-description">Description for {{ image.name }}</p>
+        {% if site.data.image_descriptions[image_name] %}
+          <p class="image-description">{{ site.data.image_descriptions[image_name] }}</p>
+        {% endif %}
       </div>
     {% endif %}
   {% endfor %}
