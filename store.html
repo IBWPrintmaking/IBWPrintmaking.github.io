@@ -3,8 +3,6 @@ layout: default
 title: Store
 ---
 
-<h1>IBW High School Printmaking Store</h1>
-
 <div class="store-grid">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/designs/' %}
@@ -13,7 +11,6 @@ title: Store
         <div class="thumbnail-container">
           <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
         </div>
-        <h2>{{ image.name }}</h2>
         {% if site.data.design_descriptions[image_name] %}
           <p class="design-description">{{ site.data.design_descriptions[image_name] }}</p>
         {% else %}
