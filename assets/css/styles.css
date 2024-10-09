@@ -123,12 +123,21 @@ nav ul li a {
     flex-direction: column;
 }
 
-.store-item img {
+.thumbnail-container {
     width: 100%;
-    height: 250px;
+    padding-top: 100%; /* This creates a 1:1 aspect ratio */
+    position: relative;
+    overflow: hidden;
     border-radius: 4px;
+}
+
+.store-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
 .store-item h2 {

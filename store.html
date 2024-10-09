@@ -10,7 +10,9 @@ title: Store
     {% if image.path contains '/assets/designs/' %}
       {% assign image_name = image.path | split: '/' | last %}
       <div class="store-item">
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
+        <div class="thumbnail-container">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
+        </div>
         <h2>{{ image.name }}</h2>
         {% if site.data.design_descriptions[image_name] %}
           <p class="design-description">{{ site.data.design_descriptions[image_name] }}</p>
