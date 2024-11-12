@@ -2,7 +2,7 @@
 title: IBW High School Printmaking
 description: Exploring creativity through printmaking at Ida B. Wells High School
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aramansell.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://leilabravo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
