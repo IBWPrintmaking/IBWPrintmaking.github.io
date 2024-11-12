@@ -14,7 +14,7 @@ body {
 }
 
 header, footer {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     width: 100%;
 }
 
@@ -159,7 +159,7 @@ nav ul li a {
 
 .button {
     padding: 8px 16px;
-    background-color: #4CAF50;
+    background-color: #737373;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -168,7 +168,7 @@ nav ul li a {
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #5E5E5E;
 }
 
 .close:hover,
