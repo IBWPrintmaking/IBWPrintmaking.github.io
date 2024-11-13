@@ -199,3 +199,7 @@ nav ul li a {
     margin-right: auto;
     width: 50%;
   }
+
+  .bodytext {
+    text-align: center;
+  }
