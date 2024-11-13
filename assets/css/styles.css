@@ -159,7 +159,7 @@ nav ul li a {
 
 .button {
     padding: 8px 16px;
-    background-color: #e6d3ba
+    background-color: #fbeedd
     ;
     color: #333;
     text-decoration: none;
@@ -169,7 +169,7 @@ nav ul li a {
 }
 
 .button:hover {
-    background-color: #5E5E5E;
+    background-color: #e6d3ba;
 }
 
 .close:hover,
