@@ -210,21 +210,3 @@ nav ul li a {
     height: auto;
     width: auto\9;
 }
-
-a:link {
-    color: #333;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #333;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #333;
-    background-color: transparent;
-    text-decoration: underline;
-  }
