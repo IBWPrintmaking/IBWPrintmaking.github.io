@@ -212,19 +212,19 @@ nav ul li a {
 }
 
 a:link {
-    color: #bea584;
+    color: #333;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: #e6d3ba;
+    color: #333;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: #e6d3ba;
+    color: #333;
     background-color: transparent;
     text-decoration: underline;
   }
