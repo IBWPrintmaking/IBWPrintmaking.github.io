@@ -1,8 +1,5 @@
 # Site settings
 #title: IBW High School Printmaking
-title: <img src="assets/images/owl logo.pdf" alt="Ida B Wells Printshop Owl Logo" 
-      width="200" 
-      height="200">
 description: Exploring creativity through printmaking at Ida B. Wells High School
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://leilabravo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
