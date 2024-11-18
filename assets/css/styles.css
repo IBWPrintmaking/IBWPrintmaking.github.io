@@ -211,22 +211,20 @@ nav ul li a {
     width: auto\9;
 }
 
-/**/
+.image-container {
+    position: relative;
+    width: 100%;  /* or specify a specific width */
+    height: 100%; /* or specify a specific height */
+}
 
-.parent {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    border: 1px red solid;
-  }
-  .image2 {
+.image1, .image2 {
     position: absolute;
-    top: 30px;
-    left: 30px;
-    border: 1px green solid;
-  }
+    top: 0;
+    left: 0;
+    width: 100%;  /* or use a specific width if you prefer */
+    max-height: 100%;  /* ensure images do not stretch */
+}
+
+.image2 {
+    opacity: 0.7; /* Optional: adjust opacity of the top image */
+}
