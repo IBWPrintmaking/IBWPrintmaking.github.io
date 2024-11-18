@@ -211,35 +211,22 @@ nav ul li a {
     width: auto\9;
 }
 
-/*image stuff - maybe wont work
+/**/
 
-section {
+.parent {
     position: relative;
+    top: 0;
+    left: 0;
   }
-  
-  section img {
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+  }
+  .image2 {
     position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
   }
-
-  .top {
-    animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-direction: alternate;
-  }
-  
-  @keyframes fade {
-    0% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }*/
