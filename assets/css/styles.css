@@ -211,17 +211,3 @@ nav ul li a {
     width: auto\9;
 }
 
-/**/
-
-@keyframes example {
-    from {opacity: 1;}
-    to {opacity: 0;}
- }
-
-  .woah {
-    width: 100px;
-    height: 100px;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }  
