@@ -244,6 +244,7 @@ nav ul li a {
     width: 800px;
     margin-top: -40px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
