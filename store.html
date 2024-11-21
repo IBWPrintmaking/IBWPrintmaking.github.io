@@ -8,7 +8,7 @@ title: Store
 <body>
   <div class="store-grid">
     {% for image in site.static_files %}
-      {% if image.path contains '/assets/designs/' %}
+      {% if image.path contains '/assets/store-images/' %}
         {% assign image_name = image.path | split: '/' | last %}
         <div class="store-item">
           <div class="thumbnail-container">
