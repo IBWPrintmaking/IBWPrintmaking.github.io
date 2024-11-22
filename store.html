@@ -17,7 +17,7 @@ title: Store
           {% if site.data.design_descriptions[image_name] %}
             <p class="design-description">{{ site.data.design_descriptions[image_name] }}</p>
           {% else %}
-            <p class="design-description">No description available</p>
+            <p class="design-description"> </p>
           {% endif %}
           <div class="button-group">
             {% assign encoded_description = site.data.design_descriptions[image_name] | url_encode %}
