@@ -13,14 +13,14 @@ title: Store
         <div class="store-item">
           <div class="thumbnail-container">
             <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" loading="lazy">
-          </div><!--
+          </div>
           {% if site.data.design_descriptions[image_name] %}
             <p class="design-description">{{ site.data.design_descriptions[image_name] }}</p>
           {% else %}
             <p class="design-description"> </p>
-          {% endif %}--->
+          {% endif %}
           <div class="button-group">
-            <!--{% assign encoded_description = site.data.design_descriptions[image_name] | url_encode %}-->
+            {% assign encoded_description = site.data.design_descriptions[image_name] | url_encode %}
             {% assign base_url = "https://docs.google.com/forms/d/e/1FAIpQLScYGlfywQj0SQPznoncpW7Nf9E-D4wT_0Zvys8gjToG2ZngCg/viewform?usp=pp_url" %}
             <a href="{{ base_url }}&entry.612975358=Shirt&entry.1687468573={{ encoded_description }}" class="button" target="_blank">Shirt</a>
             <a href="{{ base_url }}&entry.612975358=Bag&entry.1687468573={{ encoded_description }}" class="button" target="_blank">Bag</a>
