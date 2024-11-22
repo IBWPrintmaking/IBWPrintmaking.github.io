@@ -212,7 +212,7 @@ nav ul li a {
 }
 
 
-/**
+/**/
 
 .slider{
     width: 1170px;
@@ -281,4 +281,4 @@ nav ul li a {
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-}fhfhhfhfhfh*/
+}
