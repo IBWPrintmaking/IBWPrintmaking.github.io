@@ -52,4 +52,15 @@ title: :]
 </div>
 <!----image slider end---->
 
+<script type="text/javascrypt">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+</script>
+
 </body>
