@@ -8,15 +8,10 @@ title: News
     <link rel="slyle" href="styles.css">
 </head>
 <body> 
-    <!--<h1>Latest Posts</h1>-->
+    <div class="bodytext">
+        Come join us in the Ida B Wells Print Shop on December 4th from 6-8 pm during Guardian Night! 8th graders can print their own t-shirt and take it home for FREE!!! We will also have student- made merchandise for sale from the IBW Printshop such as t-shirts, totes, posters, and more. Be sure to check out our discount bin for great deals. See you there! 
+    </div>
+    
+    <img src="assets/gallery-images/livescreenprinting.jpg" alt="alternatetext"class="center">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-     <li>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
 </body>
