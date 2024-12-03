@@ -6,13 +6,20 @@ title: Community
   <link rel="slyle" href="styles.css">
 </head>
 <body>
-  <div class="bodytext">
+  <!--<div class="bodytext">
     <h2> Get To Know Us!</h2>
     <a href="mailto:printmakingibw@gmail.com" class="button">Contact</a>
     <a href="https://www.instagram.com/ibwprintmaking/" class="button">Instagram</a>
   </div>
 
-  <!---->
+  ----->
+
+  <div class="bodytext">
+    <h2> Get To Know Us!</h2>
+    <a href="mailto:printmakingibw@gmail.com"><img src="assets/other-images/gmail_icon.png" style="width:42px;height:42px;"></a>
+    <a href="https://www.instagram.com/ibwprintmaking/"><img src="assets/other-images/instagram_logo.png" style="width:42px;height:42px;"></a>
+  </div>
+
   <div class="gallery-grid">
     {% for image in site.static_files %}
       {% if image.path contains '/assets/community-images/' %}
