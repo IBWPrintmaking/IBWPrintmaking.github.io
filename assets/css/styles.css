@@ -215,4 +215,25 @@ nav ul li a {
     max-height: 100%;
     height: auto;
     width: auto\9;
+    /***/
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
 }
+
+.visible {
+    opacity: 1;
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+

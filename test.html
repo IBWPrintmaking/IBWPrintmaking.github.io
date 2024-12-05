@@ -1,0 +1,50 @@
+---
+layout: default
+title: Home
+---
+
+<head>
+    <link rel="slyle" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="assets/gallery-images/copper etching.jpg" class="visible">
+        <img src="assets/community-images/Screenshot 2024-11-22 at 2.18.30 PM copy.png">
+        <img src="assets/other-images/gmail_icon.png">
+        <!-- Add more images as needed -->
+      </div>
+    
+      <button onclick="previousImage()">Previous</button>
+      <button onclick="nextImage()">Next</button>
+    
+      <script>
+        let index = 0;
+        const images = document.querySelectorAll('.image-container img');
+    
+        function showImage(index) {
+          images.forEach((img, i) => {
+            if (i === index) {
+              img.classList.add('visible');
+            } else {
+              img.classList.remove('visible');
+            }
+          });
+        }
+    
+        function nextImage() {
+          index++;
+          if (index >= images.length) {
+            index = 0;
+          }
+          showImage(index);
+        }
+    
+        function previousImage() {
+          index--;
+          if (index < 0) {
+            index = images.length - 1;
+          }
+          showImage(index);
+        }
+      </script>
+</body>
