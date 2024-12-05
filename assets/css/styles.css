@@ -216,17 +216,3 @@ nav ul li a {
     height: auto;
     width: auto\9;
 }
-
-.visible {
-    opacity: 1;
-}
-
-.image-container {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-}
-
-
-
