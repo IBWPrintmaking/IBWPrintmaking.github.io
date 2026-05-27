@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px 10vw;
+  background-color: #00000000;
+}
+
+h1 {
+  font-size: 37.5px;
+  margin-bottom: 0.5em;
+}
+
+.pages a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.background {
+  background-color: #f0e8e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+.centered {
+  text-align: center;
+}
+
+.biggest {
+  font-size: 34.5px;
+}
+
+.bigger {
+  font-size: 22.5px;
+}
+
+.big {
+  font-size: 19px;
+}
+
+.normal {
+  font-size: 14.5px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #888;
+}
+
+.pagebreak.short {
+  /* should always be a div
+  a little centered gray bar */
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px auto;
+  width: 20%;
+}
+
+.pagebreak.long {
+  /* should always be a div
+  a little centered gray bar */
+  height: 2px;
+  background-color: #ccc;
+  margin: 40px auto;
+  width: 50%;
+}
+
+.mainSlideshow {
+  width: 700px;
+  height: 400px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #0000;
+  margin: 0 auto;
+}
+
+.mainSlideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
